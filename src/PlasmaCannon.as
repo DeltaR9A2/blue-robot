@@ -23,11 +23,11 @@ package
 {
 	import org.flixel.*;
 	
-	public class Cannon extends Firearm
+	public class PlasmaCannon extends Firearm
 	{
 		[Embed(source="../data/sounds/plasma_cannon_fire.mp3", mimeType="audio/mpeg")] private static var ShotSound:Class;
 
-		public function Cannon(owner:FlxBasic)
+		public function PlasmaCannon(owner:FlxBasic)
 		{
 			super(owner);
 			this.bulletType = PlasmaBall;

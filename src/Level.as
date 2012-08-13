@@ -146,19 +146,19 @@ package
 			Main.level = this;
 			
 			players.add(Main.player);
-			display.add(Main.hud);
+			//display.add(Main.hud);
 			
 			terrainMap.follow();
 			
 			FlxG.camera.target = Main.player;
 			
-			FlxG.flash(0xFF000000, Main.fadeTime);
+			//FlxG.flash(0xFF000000, Main.fadeTime);
 		}
 		
 		override public function destroy():void
 		{
 			players.remove(Main.player);
-			display.remove(Main.hud);
+			//display.remove(Main.hud);
 		}
 		
 		override public function update():void
@@ -167,7 +167,7 @@ package
 			
 			// Player Collisions
 			FlxG.collide(players, terrain);
-			FlxG.overlap(players, bridges, FlxObject.separate, Player.bridgeTest);
+			FlxG.overlap(players, bridges, FlxObject.separate, PlayerPhysics.bridgeTest);
 			FlxG.overlap(players, enemies, Monster.touchOfDeath);
 			FlxG.overlap(players, actives, Active.findTargetActive);
 			

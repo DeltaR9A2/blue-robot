@@ -28,7 +28,7 @@ package
 		[Embed(source="../data/images/enemyTurret.png", mimeType="image/png")] private static var Sprite:Class;
 		[Embed(source="../data/sounds/enemy_hurt.mp3", mimeType="audio/mpeg")] private static var HurtSound:Class;
 
-		public var cannon:Cannon;
+		public var cannon:PlasmaCannon;
 		
 		public var wakeDelay:Number = 1.0;
 		
@@ -50,7 +50,7 @@ package
 			this.x -= this.width>>1;
 			this.y -= this.height>>1;
 			
-			cannon = new Cannon(this);
+			cannon = new PlasmaCannon(this);
 			cannon.source = cannon;
 			cannon.target = Main.player;
 			cannon.firing = false;

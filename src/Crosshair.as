@@ -16,7 +16,7 @@ package
 		{
 			moveTo(FlxG.mouse);
 			
-			if(Main.player.weapon.readyToAttack()){
+			if(Main.player.weapon != null && Main.player.weapon.readyToAttack()){
 				color = 0x00FF00;
 			}else{
 				color = 0xFF0000;

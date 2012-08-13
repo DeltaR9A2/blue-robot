@@ -61,11 +61,7 @@ package
 		
 		override public function update():void{
 			for(var i:uint = 0; i < weaponSelectSprites.length; i++){
-				if(i == Main.player.weaponIndex){
-					weaponSelectSprites[i].color = 0x33FF33;
-				}else{
-					weaponSelectSprites[i].color = 0x999999;
-				}
+				
 			}
 		}
 	}

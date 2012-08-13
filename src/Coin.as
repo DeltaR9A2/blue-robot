@@ -81,7 +81,7 @@ package
 		
 		override public function onCollect():void
 		{
-			Main.player.money += this._value;
+			//Main.player.money += this._value;
 			FlxG.play(CollectSound);
 		}
 		

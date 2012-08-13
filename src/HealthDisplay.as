@@ -28,6 +28,8 @@ package
 	public class HealthDisplay extends HUDElement
 	{
 		[Embed(source="../data/images/pickupHearts.png", mimeType="image/png")] public static const SpriteSheet:Class;
+	
+		public static const padding:Number = 2;
 		
 		public var hearts:Vector.<FlxSprite> = null;
 		public var pulseTimer:Number = 0.0;

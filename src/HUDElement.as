@@ -22,26 +22,24 @@
 package
 {
 	import org.flixel.*;
-	public class HUDElement extends Group
+	public class HUDElement extends FlxGroup
 	{
 		public var bg:FlxSprite = null;
 		
 		public function HUDElement(w:Number, h:Number)
 		{
-			super(w, h);
-			loc.scrollFactor.x = 0;
-			loc.scrollFactor.y = 0;
+			setSize(w, h);
 			
 			bg = new FlxSprite;
 			bg.scrollFactor.x = 0;
 			bg.scrollFactor.y = 0;
-			bg.makeGraphic(loc.width, loc.height, 0x55000000);
-			bg.x = loc.x;
-			bg.y = loc.y;
+			bg.makeGraphic(w, h, 0x55000000);
+			bg.x = x;
+			bg.y = y;
 			add(bg);
 		}
 		
-		override public function syncX():void{ bg.x = loc.x; }
-		override public function syncY():void{ bg.y = loc.y; }
+		public function syncX():void{ bg.x = x; }
+		public function syncY():void{ bg.y = y; }
 	}
 }

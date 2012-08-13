@@ -28,11 +28,6 @@ package
 		function set x(n:Number):void;
 		function set y(n:Number):void;
 		
-		function get w():Number;
-		function get h():Number;
-		function set w(n:Number):void;
-		function set h(n:Number):void;
-		
 		function get midX():Number;
 		function get midY():Number;
 		function set midX(n:Number):void;

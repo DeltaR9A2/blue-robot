@@ -21,18 +21,27 @@
 
 package
 {
+	
 	public class Rect implements IRect
 	{
+		//import flash.geom.Point;
+		//public var flashPoint:Point = new Point;
+		//public function get x():Number{ return flashPoint.x; }
+		//public function get y():Number{ return flashPoint.y; }
+		//public function set x(n:Number):void{ flashPoint.x = n; }
+		//public function set y(n:Number):void{ flashPoint.y = n; }
+		
+		public function Rect(x:Number=0, y:Number=0, w:Number=0, h:Number=0){ setRect(x,y,w,h); }
+		
 		private var _x:Number = 0;
 		private var _y:Number = 0;
-		private var _w:Number = 0;
-		private var _h:Number = 0;
-		
 		public function get x():Number{ return _x; }
 		public function get y():Number{ return _y; }
 		public function set x(n:Number):void{ _x = n; }
 		public function set y(n:Number):void{ _y = n; }
 		
+		private var _w:Number = 1;
+		private var _h:Number = 1;
 		public function get w():Number{ return _w; }
 		public function get h():Number{ return _h; }
 		public function set w(n:Number):void{ _w = n; }
@@ -52,6 +61,24 @@ package
 		public function get bEdge():Number { return y + h; }
 		public function set tEdge(n:Number):void { y = n; }
 		public function set bEdge(n:Number):void { y = n - h; }
+		
+		public function setPos(nx:Number=0, ny:Number=0):void
+		{
+			x = nx;
+			y = ny;
+		}
+		
+		public function setSize(nw:Number=1, nh:Number=1):void
+		{
+			w = nw;
+			h = nh;
+		}
+		
+		public function setRect(nx:Number=0, ny:Number=0, nw:Number=1, nh:Number=1):void
+		{
+			setPos(nx, ny);
+			setSize(nw, nh);
+		}
 		
 		public function rangeTo(other:IRect):Number
 		{
@@ -90,5 +117,10 @@ package
 		public function get height():Number{ return h; }
 		public function set width(n:Number):void{ w = n; }
 		public function set height(n:Number):void{ h = n; }
+		
+		public function get left():Number{ return lEdge; }
+		public function get right():Number{ return lEdge; }
+		public function get top():Number{ return lEdge; }
+		public function get bottom():Number{ return lEdge; }
 	}
 }

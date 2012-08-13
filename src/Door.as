@@ -72,14 +72,14 @@ package
 		override public function activate():void
 		{
 			if(doorTarget == ""){
-				Main.statusMessage("This door is malfunctioning and will not open.");
+				//Main.statusMessage("This door is malfunctioning and will not open.");
 			}else if(locked){
-				if(Main.player.accessKeys.indexOf(accessName) != -1){
-					this.locked = false;
-					Main.statusMessage("The door is now unlocked.");
-				}else{
-					Main.statusMessage("This door is locked.");
-				}
+				//if(Main.player.accessKeys.indexOf(accessName) != -1){
+				//	this.locked = false;
+				//	Main.statusMessage("The door is now unlocked.");
+				//}else{
+				//	Main.statusMessage("This door is locked.");
+				//}
 			}else{
 				Main.player.moveToDoor(this.doorTarget);
 			}
@@ -91,10 +91,10 @@ package
 			
 			if(broken){
 				play("broken");
-			}else if(Main.player.targetActive == this){
+			}else if(true){ //Main.player.targetActive == this){
 				instructionTimer -= FlxG.elapsed;
 				if(instructionTimer <= 0){
-					Main.contextMessage("[E] Use Door");
+					//Main.contextMessage("[E] Use Door");
 					instructionTimer = 0.5;
 				}
 				

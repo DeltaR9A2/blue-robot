@@ -38,66 +38,12 @@ package
 		public static const fadeTime:Number = 0.50;
 		
 		public static var player:Player = null;
-
 		public static var level:Level = null;
-		public static var hud:HUD = null;
-		
-		public static var saveSettings:SaveGame = null;
-		public static var saveSlot1:SaveGame = null;
-		public static var saveSlot2:SaveGame = null;
-		public static var saveSlot3:SaveGame = null;
 		
 		public function Main()
 		{
 			super(320, 240, TitleScreen, 2);
 			forceDebugger = true;
-			
-			saveSettings = new SaveGame("settings");
-			saveSlot1 = new SaveGame("slot1");
-			saveSlot2 = new SaveGame("slot2");
-			saveSlot3 = new SaveGame("slot3");
-		}
-		
-
-		public static function statusMessage(text:String):void
-		{
-			Main.hud.statusMessage.text = text;
-		}
-		
-		public static function contextMessage(text:String):void
-		{
-			Main.hud.contextMessage.text = text;
-		}
-		
-		public static function startNewGame():void
-		{
-			import flash.system.System;
-			
-			Main.player = new Player();
-			Main.hud = new HUD;
-
-			while(Level.fullList.length > 0)
-			{ Level.fullList.shift().destroy(); }
-
-			Door.byName = {};
-			Level.byDoorName = {};
-			
-			System.gc();
-			
-			for each(var rawXML:Class in
-				[
-					Level.Level001XML,
-					Level.Level002XML,
-					Level.Level002AXML
-				]
-			){
-				var level:Level = new Level;
-				level.loadLevel(rawXML);
-			}
-			
-			FlxG.mouse.hide();
-			FlxG.playMusic(Level.MusicMP3);
-			Main.player.moveToDoor("gamestart");
 		}
 	}
 }

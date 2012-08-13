@@ -37,7 +37,7 @@ package
 		
 		public static function findTargetActive(player:Player, active:Active):void
 		{
-			player.targetActive = active;
+			
 		}
 	}
 }

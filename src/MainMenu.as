@@ -38,7 +38,7 @@ package
 			
 			buttons = new Array;
 			
-			buttons.push(new FlxButton(0,0,"Start Game",function():void{ FlxG.fade(0xFF000000, Main.fadeTime, Main.startNewGame); }));
+			buttons.push(new FlxButton(0,0,"Start Game"));
 			buttons.push(new FlxButton(0,0,"How to Play",function():void{ FlxG.switchState(new HowToPlay); }));
 			//buttons.push(new FlxButton(0,0,"Options",function():void{ }));
 			buttons.push(new FlxButton(0,0,"Credits",function():void{ FlxG.switchState(new Credits); }));

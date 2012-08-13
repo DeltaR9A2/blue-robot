@@ -26,7 +26,7 @@ package
 	
 	import org.flixel.*;
 	
-	public class CreditsEntry extends Group
+	public class CreditsEntry extends FlxGroup
 	{
 		public static const padding:Number = 5;
 		
@@ -38,7 +38,7 @@ package
 		
 		public function CreditsEntry(rawImage:Class, name:String, credit:String, url:String):void
 		{
-			super(FlxG.width, FlxG.height/4);
+			setSize(FlxG.width, FlxG.height/4);
 			
 			image = add(new FlxSprite(0,0,rawImage)) as FlxSprite;
 			creditLabel = add(new FlxText(0,0,200,credit)) as FlxText;
@@ -46,7 +46,7 @@ package
 			urlButton = add(new FlxButton(0,0,"website",goToURL)) as FlxButton;
 			urlRequest = new URLRequest(url);
 			
-			loc.w = image.w + nameLabel.w + (padding*3);
+			w = image.w + nameLabel.w + (padding*3);
 		}
 		
 		public function goToURL():void
@@ -54,18 +54,18 @@ package
 			navigateToURL(urlRequest, "_blank");
 		}
 		
-		override public function syncX():void
+		public function syncX():void
 		{
-			image.lEdge = loc.lEdge + padding;
+			image.lEdge = lEdge + padding;
 			creditLabel.lEdge = image.rEdge + padding;
 			nameLabel.lEdge = image.rEdge + padding;
 			urlButton.lEdge = image.rEdge + padding;
 		}
 		
-		override public function syncY():void
+		public function syncY():void
 		{
-			image.tEdge = loc.tEdge + padding;
-			creditLabel.tEdge = loc.tEdge + padding;
+			image.tEdge = tEdge + padding;
+			creditLabel.tEdge = tEdge + padding;
 			nameLabel.tEdge = creditLabel.bEdge + padding;
 			urlButton.tEdge = nameLabel.bEdge + padding;
 		}

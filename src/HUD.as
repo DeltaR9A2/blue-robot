@@ -22,8 +22,10 @@
 package
 {
 	import org.flixel.*;
-	public class HUD extends Group
+	public class HUD extends FlxGroup
 	{
+		public static const padding:Number = 2;
+		
 		public var coinDisplay:CoinDisplay = null;
 		public var healthDisplay:HealthDisplay = null;
 		public var statusMessage:TextDisplay = null;
@@ -36,7 +38,7 @@ package
 		
 		public function HUD()
 		{
-			super(FlxG.width, FlxG.height);
+			setRect(FlxG.width, FlxG.height);
 			
 			coinDisplay = new CoinDisplay;
 			coinDisplay.lEdge = 0;
@@ -46,7 +48,7 @@ package
 			healthDisplay.lEdge = coinDisplay.rEdge;
 			healthDisplay.bEdge = FlxG.height;
 			
-			bottomFiller = new HUDElement(FlxG.width - (coinDisplay.width + healthDisplay.width), 8 + 2*Group.padding);
+			bottomFiller = new HUDElement(FlxG.width - (coinDisplay.width + healthDisplay.width), 8 + 2*padding);
 			bottomFiller.lEdge = healthDisplay.rEdge;
 			bottomFiller.bEdge = FlxG.height;
 

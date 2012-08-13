@@ -25,6 +25,8 @@ package
 	
 	public class TextDisplay extends HUDElement
 	{
+		public static const padding:Number = 2;
+		
 		private var _text:FlxText = null;
 		
 		public var duration:Number = 0.0;

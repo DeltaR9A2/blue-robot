@@ -4,7 +4,7 @@ package
 	
 	public class SaveGame
 	{
-		public var data:Object = null;
+		public var saveData:Object = null;
 
 		public var flxSave:FlxSave = null;
 		public var saveBound:Boolean = false;
@@ -16,13 +16,13 @@ package
 			
 			if(saveBound){
 				if(flxSave.data.data == null){
-					data = {};
-					flxSave.data.data = data;
+					saveData = {};
+					flxSave.data.data = saveData;
 				}else{
-					data = flxSave.data.data;
+					saveData = flxSave.data.data;
 				}
 			}else{
-				data = {};
+				saveData = {};
 			}
 		}
 		

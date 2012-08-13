@@ -45,8 +45,6 @@ package
 		
 		override public function onCollect():void
 		{
-			Main.statusMessage("You found a keycard!");
-			Main.player.accessKeys.push(accessName);
 			FlxG.play(CollectSound);
 		}
 	}

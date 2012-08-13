@@ -27,12 +27,15 @@ package
 	
 	public class CoinDisplay extends HUDElement
 	{
+		public static const padding:Number = 2;
+		
 		public var coinIcon:FlxSprite = null;
 		public var coinLabel:FlxText = null;
 		public var formatter:CurrencyFormatter = new CurrencyFormatter("en-US");
 		
 		public function CoinDisplay()
 		{
+			
 			coinIcon = new FlxSprite;
 			coinIcon.loadGraphic(Coin.SpriteSheet, true, false, 8, 8);
 			coinIcon.addAnimation("gold", [0, 1, 2, 3, 4, 5, 6, 7], 5, true);
@@ -71,7 +74,7 @@ package
 		override public function update():void
 		{
 			if(Main.player != null){
-				coinLabel.text = formatter.format(Main.player.money/100, true);
+				//coinLabel.text = formatter.format(Main.player.money/100, true);
 			}
 			
 			super.update();
