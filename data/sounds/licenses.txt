@@ -1,0 +1,19 @@
+License information for [project folder]/data/sounds
+
+[
+	"coin.mp3",
+	"default_pickup.mp3",
+	"enemy_hurt.mp3",
+	"explode.mp3",
+	"gunshot.mp3",
+	"jump.mp3",
+	"lesser_gunshot.mp3",
+	"plasma_cannon_fire.mp3",
+	"player_death.mp3",
+	"player_hurt.mp3",
+	"shotgun_gunshot.mp3"
+]:
+	Legal Status:	Public Domain
+	License URL:	http://creativecommons.org/publicdomain/zero/1.0/
+	Created by:	John Colburn
+	Notes:		I created these using sfxr / encoded with lame.

@@ -1,0 +1,30 @@
+License information for [project folder]/data/XCFs
+
+["effectExplodePoof.xcf"]:
+	Legal Status:	Public Domain
+	License URL:	http://creativecommons.org/publicdomain/zero/1.0/
+	Created by:	Jetrel
+	Source URL:	http://opengameart.org/content/explosion-animations
+	Date Found:	7/28/2012
+
+
+[	"bulletBlasterBolt.xcf",
+	"bulletPlasmaBall.xcf",
+	"crosshair.xcf",
+	"door.xcf",
+	"enemyBees.xcf",
+	"enemyTurret.xcf",
+	"enemyTurretBase.xcf",
+	"howToPlay.xcf",
+	"pickupCoins.xcf",
+	"pickupHearts.xcf",
+	"playerSprite.xcf",
+	"tiles.xcf",
+	"weaponSelectBlaster.xcf",
+	"weaponSelectRifle.xcf",
+	"weaponSelectShotgun.xcf"
+]:
+	Legal Status:	Creative Commons Attribution Share-Alike
+	License URL:	http://creativecommons.org/licenses/by-sa/3.0/
+	Created by:	John Colburn
+	

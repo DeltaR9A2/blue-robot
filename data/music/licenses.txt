@@ -1,0 +1,9 @@
+License information for [project folder]/data/music
+
+["Datastream_Goddess.mp3"]:
+	Legal Status:	Creative Commons Attribution
+	License URL:	http://creativecommons.org/licenses/by/3.0/
+	Created by:	FoxSynergy
+	Source URL:	http://opengameart.org/content/datastream-goddess
+	Date Found:	8/3/2012
+	

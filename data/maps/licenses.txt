@@ -1,0 +1,25 @@
+License information for [project folder]/data/maps
+
+[	"bee.png",
+	"door.png",
+	"heart.png",
+	"key.png",
+	"turret.png",
+]:
+	Legal Status:	Creative Commons Attribution Share-Alike
+	License URL:	http://creativecommons.org/licenses/by-sa/3.0/
+	Created by:	John Colburn
+	Notes:		These are used by the map editor as entity icons. 
+			They are copied from the originals in the data/images folder.
+
+
+[	"blue_robot.oep",
+	"level_001.oel",
+	"level_002.oel",
+	"level_002_storage.oel"
+]:
+	Legal Status:	Public Domain
+	License URL:	http://creativecommons.org/publicdomain/zero/1.0/
+	Created by:	John Colburn
+	Notes:		Created with Ogmo http://www.ogmoeditor.com/
+	

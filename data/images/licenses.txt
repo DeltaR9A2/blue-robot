@@ -1,0 +1,40 @@
+License information for [project folder]/data/images
+
+["effectExplodePoof.png"]:
+	Legal Status:	Public Domain
+	License URL:	http://creativecommons.org/publicdomain/zero/1.0/
+	Created by:	Jetrel
+	Source URL:	http://opengameart.org/content/explosion-animations
+	Date Found:	7/28/2012
+
+
+[	"bulletBlasterBolt.png",
+	"bulletPlasmaBall.png",
+	"creditsFatCow.png",
+	"creditsFoxSynergy.png",
+	"creditsJohnColburn.png",
+	"crosshair.png",
+	"door.png",
+	"enemyBees.png",
+	"enemyTurret.png",
+	"enemyTurretBase.png",
+	"howToPlay.png",
+	"pickupCoins.png",
+	"pickupHearts.png",
+	"playerSprite.png",
+	"tiles.png",
+	"weaponSelectBlaster.png",
+	"weaponSelectRifle.png",
+	"weaponSelectShotgun.png"
+]:
+	Legal Status:	Creative Commons Attribution Share-Alike
+	License URL:	http://creativecommons.org/licenses/by-sa/3.0/
+	Created by:	John Colburn
+
+
+["pickupKeyCard.png"]:
+	Legal Status:	Creative Commons Attribution
+	License URL:
+	Created by:	FatCow Webhosting
+	Source URL:	
+	Date Found:	
